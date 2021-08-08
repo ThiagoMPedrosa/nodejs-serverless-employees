@@ -1,0 +1,56 @@
+service: xxxxxxxx
+
+frameworkVersion: '2'
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  region: sa-east-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - xxxxxxxxxx
+        - xxxxxxxxxx
+        - xxxxxxxxxx
+      Resource:
+        - "*"
+
+functions:
+   insertEmployees:
+    handler: handler.insertEmployee
+    events:
+      - http:
+          path: /insertEmployee/{age}/{name}/{position}
+          method: post
+          cors: true
+   getEmployees:
+    handler: handler.getEmployees
+    events:
+      - http:
+          path: /getEmployees 
+          method: get
+          cors: true
+   editEmployees:
+    handler: handler.editEmployee
+    events:
+      - http:
+          path: /editEmployee/{empId}/{column}/{value}
+          method: post
+          cors: true      
+   deleteEmployees:
+    handler: handler.deleteEmployee
+    events:
+      - http:
+          path: /deleteEmployee/{empId}/
+          method: post
+          cors: true  
+    vpc:
+      secutiryGroupIDs:
+        - xxxxxxxxxx
+      subnetIds:
+        - xxxxxxxxxx
+        - xxxxxxxxxx
+        - xxxxxxxxxx
+        
