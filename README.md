@@ -45,6 +45,7 @@ Is now up and running in order to able the tests with the current methods bellow
 
 GET method, without variables:
 /getEmployees
+
 LIVE Example: https://uw9bj8se17.execute-api.sa-east-1.amazonaws.com/dev/getEmployees
 
 Using the GET method with this URL, you will find the Data already inserted in this project Data Base in JSON format, for example:
@@ -67,6 +68,7 @@ Using the GET method with this URL, you will find the Data already inserted in t
 
 POST method, with three variables:
 /{age}/{name}/{position}
+
 LIVE Example: https://uw9bj8se17.execute-api.sa-east-1.amazonaws.com/dev/insertEmployee/{age}/{name}/{position}
 
 ```
@@ -87,6 +89,7 @@ Using the POST method with this URL, you will get one of the following messages:
 
 POST method, with three variables:
 /editEmployee/{empId}/{column}/{value}
+
 LIVE Example: https://uw9bj8se17.execute-api.sa-east-1.amazonaws.com/dev/editEmployee/{empId}/{column}/{value}
 
 ```
@@ -110,6 +113,7 @@ Using the POST method with this URL, you will get one of the following messages:
 
 POST method, with one variable:
 /deleteEmployee/{empId}/
+
 LIVE Example: https://uw9bj8se17.execute-api.sa-east-1.amazonaws.com/dev/deleteEmployee/{empId}/
 
 ```
