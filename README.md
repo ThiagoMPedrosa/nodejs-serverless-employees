@@ -45,6 +45,7 @@ Is now up and running in order to able the tests with the current methods bellow
 
 GET method, without variables:
 /getEmployees
+LIVE Example: https://uw9bj8se17.execute-api.sa-east-1.amazonaws.com/dev/getEmployees
 
 Using the GET method with this URL, you will find the Data already inserted in this project Data Base in JSON format, for example:
 
